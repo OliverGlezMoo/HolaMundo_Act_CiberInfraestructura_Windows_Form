@@ -13,10 +13,15 @@
 #### Requisitos
 
 Incorporar a la vista dos campos de texto y un botón que validen la estructura de una contraseña, la contraseña deberá exigir:
+
   Al menos una letra mayúscula
+
   Al menos una letra minúscula
+  
   Al menos un símbolo
+  
   Al menos un número
+
 Si la contraseña ingresada corresponde a la regla solicitada, la siguiente validación comprobará que el segundo campo contenga el mismo texto
 Una vez que esto suceda deberá aparecer un MESSAGE BOX que diga "La contraseña ha sido validada"
 
@@ -26,10 +31,17 @@ Una expresión regular (Regex) que valide la regla propuesta.
 #### Función Regex
 
 La funcipin principal consiste en la validación caracter a caracter de la contraseña mediante la función ValidarContrasena, la cual emplea la siguient función regular;
+
   string pattern = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,}$";
+
 Gracias a este patron podemos identificar si la contraseña ingresada contiene;
+
 // (?=.*[a-z]) :       Al menos una mayúscula
+
 // (?=.*[A-Z]) :       Al menos una mayúscula
+
 // (?=.*\d)    :       Al menos un número
+
 // (?=.*[^\da-zA-Z]) : Al menos un símbolo (no alfanumérico)
+
 // {8,}$:               Define la longitud mínima de 8 caracteres.
