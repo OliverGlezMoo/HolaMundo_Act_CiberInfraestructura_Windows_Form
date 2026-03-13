@@ -14,13 +14,10 @@
 
 Incorporar a la vista dos campos de texto y un botón que validen la estructura de una contraseña, la contraseña deberá exigir:
 
-  Al menos una letra mayúscula
-
-  Al menos una letra minúscula
-  
-  Al menos un símbolo
-  
-  Al menos un número
+  1. Al menos una letra mayúscula
+  2. Al menos una letra minúscula
+  3. Al menos un símbolo
+  4. Al menos un número
 
 Si la contraseña ingresada corresponde a la regla solicitada, la siguiente validación comprobará que el segundo campo contenga el mismo texto
 Una vez que esto suceda deberá aparecer un MESSAGE BOX que diga "La contraseña ha sido validada"
@@ -36,12 +33,8 @@ La funcipin principal consiste en la validación caracter a caracter de la contr
 
 Gracias a este patron podemos identificar si la contraseña ingresada contiene;
 
-// (?=.*[a-z]) :       Al menos una mayúscula
-
-// (?=.*[A-Z]) :       Al menos una mayúscula
-
-// (?=.*\d)    :       Al menos un número
-
-// (?=.*[^\da-zA-Z]) : Al menos un símbolo (no alfanumérico)
-
-// {8,}$:               Define la longitud mínima de 8 caracteres.
+1. (?=.*[a-z]) :       Al menos una mayúscula
+2. (?=.*[A-Z]) :       Al menos una mayúscula
+3. (?=.*\d)    :       Al menos un número
+4. (?=.*[^\da-zA-Z]) : Al menos un símbolo (no alfanumérico)
+5. {8,}$:               Define la longitud mínima de 8 caracteres.
