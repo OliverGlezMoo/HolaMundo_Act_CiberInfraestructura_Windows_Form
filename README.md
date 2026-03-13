@@ -4,7 +4,7 @@
 
 ### Funcionalidades
 
-1. Función Placeholder sin afección con futura conexcion con bases de datos.
+1. Función Placeholder sin afección con futura conexión  con bases de datos.
 2. Ocultar la contraseña mediante el cambio de caracteres por el uso de "*"
 3. Funcion de validación de la contraseña con requisitos establecidos
 4. Confirmacion del cumplimiento de los requisitos
@@ -27,7 +27,7 @@ Una expresión regular (Regex) que valide la regla propuesta.
 
 #### Función Regex
 
-La funcipin principal consiste en la validación caracter a caracter de la contraseña mediante la función ValidarContrasena, la cual emplea la siguient función regular;
+La función principal consiste en la validación caracter a caracter de la contraseña mediante la función ValidarContrasena, la cual emplea la siguient función regular;
 
   string pattern = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,}$";
 
