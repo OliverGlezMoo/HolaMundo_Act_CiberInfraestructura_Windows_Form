@@ -53,7 +53,7 @@ namespace HolaMundo
             }
             else
             {
-                MessageBox.Show("La contraseña no cumple con los requisitos:\n- Al menos una mayúscula\n- Al menos una minúscula\n- Un número\n- Al menos un símbolo especial\n- Mínimo 8 caracteres",
+                MessageBox.Show("La contraseña no cumple con los requisitos:\n- Al menos una mayúscula\n- Al menos una minúscula\n- Al menos un número\n- Al menos un símbolo especial\n- Mínimo 8 caracteres",
                                 "Validación fallida", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }// Si la contraseña no cumple con los requisitos, mostramos un mensaje de error al usuario.
         }
